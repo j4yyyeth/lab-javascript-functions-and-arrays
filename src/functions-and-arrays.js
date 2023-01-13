@@ -63,16 +63,29 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(words) {
+  return words.reduce((uniqueWords, word) => {
+    if (!uniqueWords.includes(word)) {
+      uniqueWords.push(word);
+    }
+    return uniqueWords;
+  }, []);
+}
 
 
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
-
-
+function doesWordExist(arr, searchWord) {
+  let exists = false
+  arr.forEach((element) => {
+    if (searchWord === element) { 
+      exists = true;
+    } 
+  })
+  return exists
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -89,7 +102,12 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes (arrOfWords, searchWord) {
+  
+}
+
+// Iteration #7: Count repetition
+// Declare a function named howManyTimes that will take in an array of words as the first argument, and a word to search for as the second argument. The function will return the number of times that word appears in the array.
 
 
 
