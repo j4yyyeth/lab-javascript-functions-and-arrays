@@ -89,41 +89,14 @@ function doesWordExist(arr, searchWord) {
 
 // Iteration #7: Count repetition
 
-// Ask Dustin to review:
-
-const wordsCount = [
-  'machine',
-  'matter',
-  'subset',
-  'trouble',
-  'starting',
-  'matter',
-  'machine',
-  'matter',
-  'truth',
-  'disobedience',
-  'matter'
-];
-
-let count = 0;
-
-function howManyTimes (arrOfWords, searchWord) {
+function howManyTimes(arrOfWords, searchWord) {
+  let count = 1;
   arrOfWords.forEach ((element) => {
     if (element === searchWord) {
-      return count++;
+      console.log(count++);
     }
   })
 }
-
-console.log(howManyTimes(wordsCount, 'machine'));
-
-// Ask Dustin to review:
-
-
-// Iteration #7: Count repetition
-// Declare a function named howManyTimes that will take in an array of words as the first argument, and a word to search for as the second argument. The function will return the number of times that word appears in the array.
-
-
 
 // Iteration #8: Bonus
 const matrix = [
